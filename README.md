@@ -11,6 +11,10 @@ O repositório tem um tutorial, passo a passo, para fazer seu primeiro jogo em U
 
 Disponível [aqui](./RoadmapWorkshop.md)
 
+# Glossario
+
+Disponivel [aqui](./glossario.md)
+
 # Tutoriais
 
 # Como contribuir
