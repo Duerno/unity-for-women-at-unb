@@ -10,6 +10,9 @@ namespace PartIII
 		// Public attributes
 		public float maxSpeed = 5;
 		public float jumpSpeed = 5;
+		
+		private AudioSource source;
+
 
 		// Private attributes
 		Rigidbody2D rigidBody;
@@ -19,6 +22,8 @@ namespace PartIII
 		// Here you can handle with all objects in the scene
 		void Start()
 		{
+			source = GetComponent<AudioSource>();
+			source.Play();
 		}
 
 		// Awake is called before the first frame update
@@ -40,6 +45,13 @@ namespace PartIII
 			{
 				isJumping = true;
 				rigidBody.velocity = new Vector2(rigidBody.velocity.x, jump * jumpSpeed);
+			}
+
+			// Debug.Log(x);
+			if(x != 0){
+				source.UnPause();
+			} else {
+				source.Pause();
 			}
 		}
 
