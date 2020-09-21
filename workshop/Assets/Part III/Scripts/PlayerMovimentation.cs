@@ -23,6 +23,7 @@ namespace PartIII
 		void Start()
 		{
 			source = GetComponent<AudioSource>();
+			source.loop = true;
 			source.Play();
 		}
 
